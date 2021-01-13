@@ -5,6 +5,8 @@ TODO:
 
 - [x] Nvim config
 
+- [x] Vim config
+
 - [ ] Tagbar for nvim config
 
 - [ ] Config GDB for nvim
