@@ -3,7 +3,7 @@ My own dotfiles
 
 TODO:
 
-- [x]Nvim config
+- [x] Nvim config
 
 - [ ] Tagbar for nvim config
 
