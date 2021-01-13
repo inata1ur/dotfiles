@@ -3,12 +3,12 @@ My own dotfiles
 
 TODO:
 
--[x] Nvim config
+- [x]Nvim config
 
--[ ] Tagbar for nvim config
+- [ ] Tagbar for nvim config
 
--[ ] Config GDB for nvim
+- [ ] Config GDB for nvim
 
--[ ] Pulseaudio profile config
+- [ ] Pulseaudio profile config
 
--[ ] Kitty config
+- [ ] Kitty config
