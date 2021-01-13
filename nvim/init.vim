@@ -30,7 +30,8 @@ endif
 
 set hidden
 
-autocmd VimEnter * NERDTree
+" autocmd VimEnter * NERDTree | wincmd p
+
 
 set laststatus=2
 let g:airline#extensions#tabline#enabled=1
@@ -116,3 +117,41 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 nmap <silent> <C-s> <Plug>(coc-range-select)
 xmap <silent> <C-s> <Plug>(coc-range-select)
 set statusline+=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+let g:tagbar_type_cpp = {
+    \ 'kinds' : [
+        \ 'p:prototypes',
+        \ 'd:macros:1',
+        \ 'g:enums',
+        \ 't:typedefs:0:0',
+        \ 'e:enumerators:0:0',
+        \ 'n:namespaces',
+        \ 'c:classes',
+        \ 's:structs',
+        \ 'u:unions',
+        \ 'f:functions',
+        \ 'm:members:0:0',
+        \ 'v:global:0:0',
+        \ 'x:external:0:0'
+    \ ]
+\ } 
+
+"let g:tagbar_help_visibility=1
+let g:tagbar_show_data_type=1
+let g:tagbar_scopestrs = {
+            \    'class': "\uf0e8",
+            \    'const': "\uf8ff",
+            \    'constant': "\uf8ff",
+            \    'enum': "\uf702",
+            \    'field': "\uf30b",
+            \    'func': "\uf794",
+            \    'function': "\uf794",
+            \    'getter': "\ufab6",
+            \    'implementation': "\uf776",
+            \    'interface': "\uf7fe",
+            \    'map': "\ufb44",
+            \    'member': "\uf02b",
+            \    'method': "\uf6a6",
+            \    'setter': "\uf7a9",
+            \    'variable': "\uf71b",
+            \ }
