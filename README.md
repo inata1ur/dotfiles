@@ -11,4 +11,4 @@ TODO:
 
 - [ ] Pulseaudio profile config
 
-- [ ] Kitty config
+- [x] Kitty config
