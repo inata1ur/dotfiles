@@ -1,4 +1,5 @@
 # dotfiles
+
 My own dotfiles
 
 TODO:
@@ -7,7 +8,7 @@ TODO:
 
 - [x] Vim config
 
-- [ ] Tagbar for nvim config
+- [x] Tagbar for nvim config
 
 - [ ] Config GDB for nvim
 
