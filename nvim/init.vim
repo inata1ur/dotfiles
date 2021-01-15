@@ -1,6 +1,17 @@
 source ~/.config/nvim/plugins.vim
 
-filetype plugin indent on
+filetype indent on
+syntax on
+set wildmenu
+set lazyredraw
+set showmatch
+set incsearch
+set foldenable
+set foldlevelstart=10
+set foldnestmax=10
+set noshowmode
+
+set clipboard=unnamed
 
 set encoding=utf-8
 set mouse=a
@@ -8,14 +19,13 @@ set mouse=a
 set number relativenumber
 set nu rnu
 
+set tabstop=2
 set expandtab
 set autoindent
 set softtabstop=2
 set shiftwidth=2
 
 set showcmd
-set cursorline
-set cursorcolumn
 set hlsearch
 
 if (empty($TMUX))
@@ -28,10 +38,9 @@ if (empty($TMUX))
   endif
 endif
 
+hi Normal guibg=NONE ctermbg=NONE
+
 set hidden
-
-" autocmd VimEnter * NERDTree | wincmd p
-
 
 set laststatus=2
 let g:airline#extensions#tabline#enabled=1
@@ -51,12 +60,11 @@ let g:syntastic_check_on_wq = 0
 
 nmap <F8> :TagbarToggle<CR>
 
-set cmdheight=2
+set cmdheight=1
 
 set updatetime=300
 set shortmess+=c
 
-syntax enable
 colorscheme onedark
 
 nnoremap <C-t> :NERDTree<CR>
@@ -155,3 +163,6 @@ let g:tagbar_scopestrs = {
             \    'setter': "\uf7a9",
             \    'variable': "\uf71b",
             \ }
+
+nnoremap < :tabprevious<CR>
+nnoremap > :tabnext<CR>
