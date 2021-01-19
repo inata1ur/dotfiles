@@ -1,5 +1,8 @@
 source ~/.config/nvim/plugins.vim
 
+set exrc
+set secure
+
 filetype indent on
 syntax on
 set wildmenu
@@ -65,7 +68,8 @@ set cmdheight=1
 set updatetime=300
 set shortmess+=c
 
-colorscheme onedark
+" colorscheme onedark
+colorscheme purify
 
 nnoremap <C-t> :NERDTree<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>

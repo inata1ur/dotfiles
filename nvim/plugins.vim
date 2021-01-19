@@ -4,7 +4,7 @@ Plug 'rhysd/vim-clang-format'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'vim-airline/vim-airline'
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/yanil'
@@ -23,4 +23,5 @@ Plug 'plasticboy/vim-markdown'             " vim-markdown
 Plug 'vim-airline/vim-airline-themes'      " vim-airline themes
 Plug 'liuchengxu/vista.vim'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
+Plug 'kyoz/purify', { 'rtp': 'vim' }
 call plug#end()
