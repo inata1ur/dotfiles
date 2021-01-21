@@ -6,7 +6,7 @@ set secure
 filetype indent on
 syntax on
 set wildmenu
-set lazyredraw
+"set lazyredraw
 set showmatch
 set incsearch
 set foldenable
@@ -52,6 +52,7 @@ let g:airline#extensions#tabline#tab_nr_type=1
 let g:airline#extensions#tabline#show_tabs=1
 let g:airline#extensions#tabline#show_buffers=1
 let g:airline_powerline_fonts=1
+let g:airline_theme='onehalfdark'
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -69,7 +70,7 @@ set updatetime=300
 set shortmess+=c
 
 " colorscheme onedark
-colorscheme purify
+colorscheme onehalfdark
 
 nnoremap <C-t> :NERDTree<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>

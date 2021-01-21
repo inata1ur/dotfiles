@@ -22,6 +22,9 @@ Plug 'godlygeek/tabular'                   " dependency for vim-markdown
 Plug 'plasticboy/vim-markdown'             " vim-markdown
 Plug 'vim-airline/vim-airline-themes'      " vim-airline themes
 Plug 'liuchengxu/vista.vim'
-Plug 'jackguo380/vim-lsp-cxx-highlight'
-Plug 'kyoz/purify', { 'rtp': 'vim' }
+" Plug 'jackguo380/vim-lsp-cxx-highlight'
+" Plug 'kyoz/purify', { 'rtp': 'vim' }
+Plug 'bfrg/vim-cpp-modern'
+Plug 'octol/vim-cpp-enhanced-highlight'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 call plug#end()
