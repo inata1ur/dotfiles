@@ -21,10 +21,10 @@ nnoremap <C-f> :<C-u>ClangFormat<CR>
 set tags=tags
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 
-hi LspCxxHlSymParameter guifg=#ff6059 cterm=none gui=none
-hi LspCxxHlSymMethod guifg=#af87ff cterm=none gui=none
-hi LspCxxHlSymStaticMethod guifg=#af87ff cterm=none gui=none
-hi LspCxxHlSymConstructor guifg=#af87ff cterm=none gui=none
+hi LspCxxHlSymParameter guifg=#e06c75 
+hi LspCxxHlSymMethod guifg=#af87ff 
+hi LspCxxHlSymStaticMethod guifg=#af87ff 
+"hi LspCxxHlSymConstructor guifg=#af87ff 
 
 let g:cpp_attributes_highlight = 1
 let g:cpp_member_highlight = 1
