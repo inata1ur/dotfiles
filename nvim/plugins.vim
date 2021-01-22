@@ -4,13 +4,12 @@ Plug 'rhysd/vim-clang-format'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 Plug 'vim-airline/vim-airline'
-"Plug 'joshdick/onedark.vim'
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/yanil'
 Plug 'vimwiki/vimwiki'
 Plug 'tbabej/taskwiki'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mhinz/vim-startify'
 Plug 'tpope/vim-fugitive'
@@ -26,5 +25,12 @@ Plug 'jackguo380/vim-lsp-cxx-highlight'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 Plug 'bfrg/vim-cpp-modern'
 Plug 'octol/vim-cpp-enhanced-highlight'
-"Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
+Plug 'airblade/vim-gitgutter'
+Plug 'andymass/vim-matchup'
+Plug 'nerdypepper/agila.vim'
+Plug 'nerdypepper/vim-colors-plain'
+Plug 'Yggdroot/indentLine'
 call plug#end()
