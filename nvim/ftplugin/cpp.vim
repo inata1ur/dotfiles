@@ -12,7 +12,7 @@ let g:syntastic_cpp_cpplint_exec = 'cpplint'
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-let g:clang_format#auto_format = 1
+"let g:clang_format#auto_format = 1
 let g:clang_format#detect_style_file = 1
 let g:clang_format#enable_fallback_style=0
 

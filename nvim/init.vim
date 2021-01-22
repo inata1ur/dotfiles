@@ -41,7 +41,7 @@ if (empty($TMUX))
   endif
 endif
 
-hi Normal guibg=NONE ctermbg=NONE
+" hi Normal guibg=NONE ctermbg=NONE
 
 set hidden
 
@@ -52,7 +52,7 @@ let g:airline#extensions#tabline#tab_nr_type=1
 let g:airline#extensions#tabline#show_tabs=1
 let g:airline#extensions#tabline#show_buffers=1
 let g:airline_powerline_fonts=1
-let g:airline_theme='onehalfdark'
+let g:airline_theme='purify'
 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -69,8 +69,8 @@ set cmdheight=1
 set updatetime=300
 set shortmess+=c
 
-" colorscheme onedark
-colorscheme onehalfdark
+colorscheme purify 
+
 
 nnoremap <C-t> :NERDTree<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
