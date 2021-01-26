@@ -24,7 +24,7 @@ map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 hi LspCxxHlSymParameter guifg=#e06c75 
 hi LspCxxHlSymMethod guifg=#af87ff 
 hi LspCxxHlSymStaticMethod guifg=#af87ff 
-"hi LspCxxHlSymConstructor guifg=#af87ff 
+hi LspCxxHlSymConstructor guifg=#af87ff 
 
 let g:cpp_attributes_highlight = 1
 let g:cpp_member_highlight = 1

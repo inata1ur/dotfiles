@@ -6,7 +6,6 @@ source ~/.config/nvim/plugins.vim
 set exrc
 set secure
 
-set lazyredraw
 set showmatch
 set incsearch
 set foldenable
@@ -24,8 +23,6 @@ set autoindent
 set showcmd
 set hlsearch
 
-hi Normal guibg=NONE ctermbg=NONE
-
 set hidden
 
 set laststatus=2
@@ -35,7 +32,7 @@ let g:airline#extensions#tabline#tab_nr_type=1
 let g:airline#extensions#tabline#show_tabs=1
 let g:airline#extensions#tabline#show_buffers=1
 let g:airline_powerline_fonts=1
-let g:airline_theme='purify'
+"let g:airline_theme='space-vim-dark'
 
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
@@ -52,8 +49,9 @@ set cmdheight=1
 set updatetime=300
 set shortmess+=c
 
-colorscheme purify 
 
+colorscheme space-vim-dark
+set termguicolors
 
 "nnoremap <C-t> :NERDTree<CR>
 "nnoremap <C-b> :NERDTreeToggle<CR>
@@ -203,7 +201,7 @@ set hidden
 set wildmenu
 set foldmethod=manual
 set complete=.,w,b,i,u,t,
-set background=dark
+"set background=dark
 set mouse=a
 
 set wildignore+=.git,.hg,.svn
@@ -346,13 +344,6 @@ xnoremap - g<C-x>
 :command! W w
 :command! Q q
 
-" abbreviations
-abclear
-iab #i #include
-iab #d #define
-cab dst put =strftime('%d %a, %b %Y')<cr>
-cab vg vimgrep
-
 " plugin settings
 
 " nerdtree
@@ -370,15 +361,6 @@ let g:gitgutter_sign_modified                  = '±'
 let g:gitgutter_sign_removed                   = '-'
 let g:gitgutter_sign_removed_first_line        = '×'
 let g:gitgutter_sign_modified_removed          = '×'
-
-" ale
-"let g:ale_set_signs             = 1
-"let g:ale_use_deprecated_neovim = 1
-"let g:ale_sign_error            = '> '
-"let g:ale_sign_warning          = '! '
-
-hi ALEErrorSign ctermfg=01 ctermbg=00
-hi ALEWarningSign ctermfg=06 ctermbg=00
 
 " rust.vim
 let g:rustfmt_autosave = 0
@@ -412,10 +394,15 @@ let g:fzf_colors =
 
 " indentLine
 let g:indentLine_setColors = 0
-let g:indentLine_char      = '┊'
+let g:indentLine_char      = '▏'
 
 " keysound
 let g:keysound_enable = 1
 let g:keysound_volume = 1000
 let g:keysound_py_version = 3
 let g:keysound_theme = 'typewriter'
+
+hi LineNr ctermbg=NONE guibg=NONE
+hi Normal ctermbg=none guibg=none
+hi SignColumn ctermbg=NONE guibg=NONE
+hi Comment guifg=#5C6370 ctermfg=59

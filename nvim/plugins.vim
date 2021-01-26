@@ -22,15 +22,14 @@ Plug 'plasticboy/vim-markdown'             " vim-markdown
 Plug 'vim-airline/vim-airline-themes'      " vim-airline themes
 Plug 'liuchengxu/vista.vim'
 Plug 'jackguo380/vim-lsp-cxx-highlight'
-Plug 'kyoz/purify', { 'rtp': 'vim' }
-Plug 'bfrg/vim-cpp-modern'
-Plug 'octol/vim-cpp-enhanced-highlight'
+"Plug 'kyoz/purify', { 'rtp': 'vim' }
+"Plug 'bfrg/vim-cpp-modern'
+"Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'airblade/vim-gitgutter'
 Plug 'andymass/vim-matchup'
-Plug 'nerdypepper/agila.vim'
-Plug 'nerdypepper/vim-colors-plain'
-Plug 'Yggdroot/indentLine'
+"Plug 'Yggdroot/indentLine'
+Plug 'liuchengxu/space-vim-dark'
 call plug#end()
